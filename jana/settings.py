@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'media',
+    'author',
     'location',
     'django.contrib.gis',
 ]
@@ -73,7 +74,7 @@ WSGI_APPLICATION = 'jana.wsgi.application'
 DATABASE_URL= config("DATABASE_URL")
 
 DATABASES = {
-    "default": dj_database_url.config(default=DATABASE_URL, conn_max_age=1800),'ENGINE': 'django.contrib.gis.db.backends.postgis',
+    "default": dj_database_url.config(default=DATABASE_URL, conn_max_age=1800)
 }
 
 
